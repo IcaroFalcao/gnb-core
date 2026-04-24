@@ -1,0 +1,5 @@
+add_test( f1u_cu_up_tx_metrics_container_test.init /home/sdr/OCUDU/ocudu/build/tests/unittests/f1u/cu_up/f1u_cu_up_tx_metrics_test [==[--gtest_filter=f1u_cu_up_tx_metrics_container_test.init]==] --gtest_also_run_disabled_tests)
+set_tests_properties( f1u_cu_up_tx_metrics_container_test.init PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/f1u/cu_up SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( f1u_cu_up_tx_metrics_container_test.values /home/sdr/OCUDU/ocudu/build/tests/unittests/f1u/cu_up/f1u_cu_up_tx_metrics_test [==[--gtest_filter=f1u_cu_up_tx_metrics_container_test.values]==] --gtest_also_run_disabled_tests)
+set_tests_properties( f1u_cu_up_tx_metrics_container_test.values PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/f1u/cu_up SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( f1u_cu_up_tx_metrics_test_TESTS f1u_cu_up_tx_metrics_container_test.init f1u_cu_up_tx_metrics_container_test.values)

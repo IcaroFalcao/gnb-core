@@ -1,0 +1,5 @@
+add_test( rlc_berarer_metrics_collector_test.check_basic_collection /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc/rlc_bearer_metrics_collector_test [==[--gtest_filter=rlc_berarer_metrics_collector_test.check_basic_collection]==] --gtest_also_run_disabled_tests)
+set_tests_properties( rlc_berarer_metrics_collector_test.check_basic_collection PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( rlc_berarer_metrics_collector_test.drop_one_report /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc/rlc_bearer_metrics_collector_test [==[--gtest_filter=rlc_berarer_metrics_collector_test.drop_one_report]==] --gtest_also_run_disabled_tests)
+set_tests_properties( rlc_berarer_metrics_collector_test.drop_one_report PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( rlc_bearer_metrics_collector_test_TESTS rlc_berarer_metrics_collector_test.check_basic_collection rlc_berarer_metrics_collector_test.drop_one_report)

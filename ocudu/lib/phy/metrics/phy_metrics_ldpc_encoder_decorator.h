@@ -1,0 +1,60 @@
+// SPDX-FileCopyrightText: Copyright (C) 2021-2026 Software Radio Systems Limited
+// SPDX-License-Identifier: BSD-3-Clause-Open-MPI
+// Portions of this file may implement 3GPP specifications, which may be subject to additional licensing requirements.
+
+#pragma once
+
+#include "ocudu/phy/metrics/phy_metrics_notifiers.h"
+#include "ocudu/phy/metrics/phy_metrics_reports.h"
+#include "ocudu/phy/upper/channel_coding/ldpc/ldpc_encoder.h"
+#include "ocudu/phy/upper/channel_coding/ldpc/ldpc_encoder_buffer.h"
+#include "ocudu/support/resource_usage/scoped_resource_usage.h"
+#include <memory>
+
+namespace ocudu {
+
+/// LDPC encoder metric decorator.
+class phy_metrics_ldpc_encoder_decorator : public ldpc_encoder
+{
+  /// Dummy LDPC encoder buffer.
+  class dummy_encoder_buffer : public ldpc_encoder_buffer
+  {
+    // See interface for documentation.
+    unsigned get_codeblock_length() const override { return 0; }
+    // See interface for documentation.
+    void write_codeblock(span<uint8_t> data, unsigned offset) const override {}
+  };
+
+public:
+  /// Creates an LDPC encoder decorator from a base LDPC encoder instance and a metric notifier.
+  phy_metrics_ldpc_encoder_decorator(std::unique_ptr<ldpc_encoder> base_encoder_,
+                                     ldpc_encoder_metric_notifier& notifier_) :
+    base_encoder(std::move(base_encoder_)), notifier(notifier_)
+  {
+    ocudu_assert(base_encoder, "Invalid encoder.");
+  }
+
+  // See interface for documentation.
+  const ldpc_encoder_buffer& encode(const bit_buffer& input, const configuration& cfg) override
+  {
+    static dummy_encoder_buffer                       dummy_buffer;
+    std::reference_wrapper<const ldpc_encoder_buffer> ret(dummy_buffer);
+
+    ldpc_encoder_metrics metrics;
+    {
+      // Use scoped resource usage class to measure CPU usage of this block.
+      resource_usage_utils::scoped_resource_usage rusage_tracker(metrics.measurements);
+      ret = base_encoder->encode(input, cfg);
+    }
+    metrics.cb_sz = units::bits(input.size());
+
+    notifier.on_new_metric(metrics);
+    return ret.get();
+  }
+
+private:
+  std::unique_ptr<ldpc_encoder> base_encoder;
+  ldpc_encoder_metric_notifier& notifier;
+};
+
+} // namespace ocudu

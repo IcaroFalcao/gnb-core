@@ -1,0 +1,4 @@
+# Directory labels
+ gateways
+# Source files and their labels
+/home/sdr/OCUDU/ocudu/tests/unittests/gateways/sctp_socket_test.cpp

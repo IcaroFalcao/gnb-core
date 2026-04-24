@@ -1,0 +1,4 @@
+# Directory labels
+ support
+# Source files and their labels
+/home/sdr/OCUDU/ocudu/tests/unittests/support/tracing/event_tracer_test.cpp

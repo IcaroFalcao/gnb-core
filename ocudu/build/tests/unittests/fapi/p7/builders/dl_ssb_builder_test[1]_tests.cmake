@@ -1,0 +1,5 @@
+add_test( dl_ssb_pdu_builder.valid_basic_parameters_passes /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders/dl_ssb_builder_test [==[--gtest_filter=dl_ssb_pdu_builder.valid_basic_parameters_passes]==] --gtest_also_run_disabled_tests)
+set_tests_properties( dl_ssb_pdu_builder.valid_basic_parameters_passes PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( dl_ssb_pdu_builder.valid_bch_payload_mixed_passes /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders/dl_ssb_builder_test [==[--gtest_filter=dl_ssb_pdu_builder.valid_bch_payload_mixed_passes]==] --gtest_also_run_disabled_tests)
+set_tests_properties( dl_ssb_pdu_builder.valid_bch_payload_mixed_passes PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( dl_ssb_builder_test_TESTS dl_ssb_pdu_builder.valid_basic_parameters_passes dl_ssb_pdu_builder.valid_bch_payload_mixed_passes)

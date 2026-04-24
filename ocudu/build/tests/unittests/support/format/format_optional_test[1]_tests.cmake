@@ -1,0 +1,7 @@
+add_test( format_optional_test.opt_uint32_t /home/sdr/OCUDU/ocudu/build/tests/unittests/support/format/format_optional_test [==[--gtest_filter=format_optional_test.opt_uint32_t]==] --gtest_also_run_disabled_tests)
+set_tests_properties( format_optional_test.opt_uint32_t PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/support/format SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( format_optional_test.opt_double /home/sdr/OCUDU/ocudu/build/tests/unittests/support/format/format_optional_test [==[--gtest_filter=format_optional_test.opt_double]==] --gtest_also_run_disabled_tests)
+set_tests_properties( format_optional_test.opt_double PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/support/format SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( format_optional_test.opt_double_fmt_spec /home/sdr/OCUDU/ocudu/build/tests/unittests/support/format/format_optional_test [==[--gtest_filter=format_optional_test.opt_double_fmt_spec]==] --gtest_also_run_disabled_tests)
+set_tests_properties( format_optional_test.opt_double_fmt_spec PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/support/format SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( format_optional_test_TESTS format_optional_test.opt_uint32_t format_optional_test.opt_double format_optional_test.opt_double_fmt_spec)

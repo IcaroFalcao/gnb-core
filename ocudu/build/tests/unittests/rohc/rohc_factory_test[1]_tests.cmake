@@ -1,0 +1,5 @@
+add_test( rohc_factory_test.create_rohc_compressor_when_supported /home/sdr/OCUDU/ocudu/build/tests/unittests/rohc/rohc_factory_test [==[--gtest_filter=rohc_factory_test.create_rohc_compressor_when_supported]==] --gtest_also_run_disabled_tests)
+set_tests_properties( rohc_factory_test.create_rohc_compressor_when_supported PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/rohc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( rohc_factory_test.create_rohc_decompressor_when_supported /home/sdr/OCUDU/ocudu/build/tests/unittests/rohc/rohc_factory_test [==[--gtest_filter=rohc_factory_test.create_rohc_decompressor_when_supported]==] --gtest_also_run_disabled_tests)
+set_tests_properties( rohc_factory_test.create_rohc_decompressor_when_supported PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/rohc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( rohc_factory_test_TESTS rohc_factory_test.create_rohc_compressor_when_supported rohc_factory_test.create_rohc_decompressor_when_supported)

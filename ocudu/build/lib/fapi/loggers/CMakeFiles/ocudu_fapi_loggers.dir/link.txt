@@ -1,0 +1,2 @@
+/usr/bin/ar qc libocudu_fapi_loggers.a CMakeFiles/ocudu_fapi_loggers.dir/logging_decorator_impl.cpp.o CMakeFiles/ocudu_fapi_loggers.dir/logging_error_notifier_decorator.cpp.o CMakeFiles/ocudu_fapi_loggers.dir/logging_p7_indications_notifier_decorator.cpp.o CMakeFiles/ocudu_fapi_loggers.dir/logging_p7_requests_gateway_decorator.cpp.o CMakeFiles/ocudu_fapi_loggers.dir/logging_p7_slot_indication_notifier_decorator.cpp.o CMakeFiles/ocudu_fapi_loggers.dir/message_loggers.cpp.o
+/usr/bin/ranlib libocudu_fapi_loggers.a

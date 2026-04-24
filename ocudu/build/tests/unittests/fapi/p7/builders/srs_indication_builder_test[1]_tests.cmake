@@ -1,0 +1,5 @@
+add_test( srs_indication_builder.valid_srs_indication_passes /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders/srs_indication_builder_test [==[--gtest_filter=srs_indication_builder.valid_srs_indication_passes]==] --gtest_also_run_disabled_tests)
+set_tests_properties( srs_indication_builder.valid_srs_indication_passes PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( srs_indication_builder.valid_srs_indication_with_positioning_report_passes /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders/srs_indication_builder_test [==[--gtest_filter=srs_indication_builder.valid_srs_indication_with_positioning_report_passes]==] --gtest_also_run_disabled_tests)
+set_tests_properties( srs_indication_builder.valid_srs_indication_with_positioning_report_passes PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi/p7/builders SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( srs_indication_builder_test_TESTS srs_indication_builder.valid_srs_indication_passes srs_indication_builder.valid_srs_indication_with_positioning_report_passes)

@@ -1,0 +1,5 @@
+add_test( rlc_tx_metrics_test.poll_latency_empty /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc/rlc_tx_metrics_test [==[--gtest_filter=rlc_tx_metrics_test.poll_latency_empty]==] --gtest_also_run_disabled_tests)
+set_tests_properties( rlc_tx_metrics_test.poll_latency_empty PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test( rlc_tx_metrics_test.poll_latency_full /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc/rlc_tx_metrics_test [==[--gtest_filter=rlc_tx_metrics_test.poll_latency_full]==] --gtest_also_run_disabled_tests)
+set_tests_properties( rlc_tx_metrics_test.poll_latency_full PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/rlc SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( rlc_tx_metrics_test_TESTS rlc_tx_metrics_test.poll_latency_empty rlc_tx_metrics_test.poll_latency_full)

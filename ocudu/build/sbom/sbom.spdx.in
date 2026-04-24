@@ -1,0 +1,336 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: ocudu
+DocumentNamespace: https://srs.io/spdxdocs/ocudu-7f41bb027d${SBOM_EXT_DOCS}
+Creator: Organization: Software Radio Systems Ltd
+Creator: Tool: cmake-sbom
+CreatorComment: <text>This SPDX document was created from CMake 3.22.1, using cmake-sbom
+from https://github.com/DEMCON/cmake-sbom</text>
+Created: 2026-03-02T14:54:02Z
+
+PackageName: GNU
+SPDXID: SPDXRef-compiler
+PackageVersion: 11.4.0
+PackageDownloadLocation: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageSupplier: Organization: Anonymous
+FilesAnalyzed: false
+PackageSummary: <text>The compiler as identified by CMake, running on Linux (x86_64)</text>
+PrimaryPackagePurpose: APPLICATION
+Relationship: SPDXRef-compiler BUILD_DEPENDENCY_OF SPDXRef-Package-OCUDU-5G-CU-DU
+RelationshipComment: <text>SPDXRef-Package-OCUDU-5G-CU-DU is built by compiler GNU (/usr/bin/c++) version 11.4.0</text>
+
+PackageName: ocudu
+SPDXID: SPDXRef-Package-OCUDU-5G-CU-DU
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/ocudu@7f41bb027d?download_url=https://github.com/ocudu/ocudu.git
+PackageVersion: 7f41bb027d
+PackageSupplier: Organization: Software Radio Systems Ltd
+PackageDownloadLocation: https://github.com/ocudu/ocudu.git
+PackageLicenseConcluded: LicenseRef-OCUDU
+PackageLicenseDeclared: LicenseRef-OCUDU
+PackageCopyrightText: 2026 Software Radio Systems Ltd
+PackageHomePage: https://srs.io
+PackageComment: <text>Built by CMake 3.22.1 with Release configuration for Linux (x86_64)</text>
+PackageVerificationCode: ${SBOM_VERIFICATION_CODE}
+BuiltDate: 2026-03-02T14:54:02Z
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-OCUDU-5G-CU-DU
+
+FileName: ./bin/ocu
+SPDXID: SPDXRef-Binary-ocu
+FileType: BINARY
+FileChecksum: SHA1: bc1b54ad7959908daf35ccf810e985a8ded048b9
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/ocucp
+SPDXID: SPDXRef-Binary-ocucp
+FileType: BINARY
+FileChecksum: SHA1: 10e93194467d174564df87803cac4324475adfc8
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/ocuup
+SPDXID: SPDXRef-Binary-ocuup
+FileType: BINARY
+FileChecksum: SHA1: 0448e5c3a41f0b1676bf46d3d648df715f4a40b5
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/odu
+SPDXID: SPDXRef-Binary-odu
+FileType: BINARY
+FileChecksum: SHA1: 11973703361faa4d3bc9175d16d8906b809d4c79
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/odu
+SPDXID: SPDXRef-Binary-odu-split-6
+FileType: BINARY
+FileChecksum: SHA1: 11973703361faa4d3bc9175d16d8906b809d4c79
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/odu
+SPDXID: SPDXRef-Binary-odu-split-7-2
+FileType: BINARY
+FileChecksum: SHA1: 11973703361faa4d3bc9175d16d8906b809d4c79
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/odu
+SPDXID: SPDXRef-Binary-odu-split-8
+FileType: BINARY
+FileChecksum: SHA1: 11973703361faa4d3bc9175d16d8906b809d4c79
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/odu_low
+SPDXID: SPDXRef-Binary-odu-low
+FileType: BINARY
+FileChecksum: SHA1: e9a2f653e1a6e82019c8c9f8214393753a9e5802
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/gnb
+SPDXID: SPDXRef-Binary-gnb
+FileType: BINARY
+FileChecksum: SHA1: d3815bde42bae439db40288eda76e7b865228e81
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/gnb
+SPDXID: SPDXRef-Binary-gnb-split-6
+FileType: BINARY
+FileChecksum: SHA1: d3815bde42bae439db40288eda76e7b865228e81
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/gnb
+SPDXID: SPDXRef-Binary-gnb-split-7-2
+FileType: BINARY
+FileChecksum: SHA1: d3815bde42bae439db40288eda76e7b865228e81
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: ./bin/gnb
+SPDXID: SPDXRef-Binary-gnb-split-8
+FileType: BINARY
+FileChecksum: SHA1: d3815bde42bae439db40288eda76e7b865228e81
+LicenseConcluded: LicenseRef-OCUDU
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+PackageName: FFTW3
+SPDXID: SPDXRef-FFTW3
+PackageDownloadLocation: http://www.fftw.org
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 3.3.8
+PackageSupplier: Organization: FFTW project
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-2.0-or-later OR LGPL-2.1-or-later
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-FFTW3
+
+PackageName: UHD
+SPDXID: SPDXRef-UHD
+PackageDownloadLocation: https://github.com/EttusResearch/uhd
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: unknown
+PackageSupplier: Organization: Ettus Research, a National Instruments Brand
+FilesAnalyzed: false
+PackageLicenseConcluded: GPL-3.0-or-later
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-UHD
+
+PackageName: yaml-cpp
+SPDXID: SPDXRef-yaml-cpp
+PackageDownloadLocation: https://github.com/jbeder/yaml-cpp
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 0.7.0
+PackageSupplier: Organization: yaml-cpp project
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-yaml-cpp
+
+PackageName: mbedTLS
+SPDXID: SPDXRef-mbedTLS
+PackageDownloadLocation: https://tls.mbed.org
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: unknown
+PackageSupplier: Organization: MbedTLS project
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache-2.0
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-mbedTLS
+
+PackageName: backward
+SPDXID: SPDXRef-backward
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: UNKNOWN
+PackageSupplier: Organization: Google Inc.
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-backward
+
+PackageName: fmt
+SPDXID: SPDXRef-fmt
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 11.1.2
+PackageSupplier: Organization: Victor Zverovich and {fmt} contributors
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-fmt
+
+PackageName: CLI11
+SPDXID: SPDXRef-CLI11
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 2.4.2
+PackageSupplier: Organization: University of Cincinnati, developed by Henry Schreiner
+FilesAnalyzed: false
+PackageLicenseConcluded: BSD-3-clause
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-CLI11
+
+PackageName: MPMCQueue
+SPDXID: SPDXRef-MPMCQueue
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: UNKNOWN
+PackageSupplier: Organization: Erik Rigtorp
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-MPMCQueue
+
+PackageName: SPSCQueue
+SPDXID: SPDXRef-SPSCQueue
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: UNKNOWN
+PackageSupplier: Organization: Erik Rigtorp
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-SPSCQueue
+
+PackageName: concurrentqueue
+SPDXID: SPDXRef-concurrentqueue
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: UNKNOWN
+PackageSupplier: Organization: Cameron Desrochers
+FilesAnalyzed: false
+PackageLicenseConcluded: Simplified BSD
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-concurrentqueue
+
+PackageName: expected
+SPDXID: SPDXRef-expected
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 1.1
+PackageSupplier: Organization: Sy Brand
+FilesAnalyzed: false
+PackageLicenseConcluded: CC0 1.0 Universal
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-expected
+
+PackageName: uWebSockets
+SPDXID: SPDXRef-uWebSockets
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 20.71.0
+PackageSupplier: Organization: Alex Hultman
+FilesAnalyzed: false
+PackageLicenseConcluded: Apache License, Version 2.0
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-uWebSockets
+
+PackageName: nlohmann
+SPDXID: SPDXRef-nlohmann
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 3.12.0
+PackageSupplier: Organization: Niels Lohmann
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-nlohmann
+
+PackageName: sbom
+SPDXID: SPDXRef-sbom
+PackageDownloadLocation: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageVersion: 1.3.0
+PackageSupplier: Organization: Jochem Rutgers
+FilesAnalyzed: false
+PackageLicenseConcluded: MIT
+Relationship: SPDXRef-Package-OCUDU-5G-CU-DU DEPENDS_ON SPDXRef-sbom
+
+LicenseID: LicenseRef-OCUDU
+LicenseName: BSD-3-Clause-Open-MPI
+ExtractedText: <text>Copyright (c) Copyright 2021-2026 Software Radio Systems Limited. All
+                        rights reserved.
+
+$COPYRIGHT$
+
+Additional copyrights may follow
+
+$HEADER$
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+- Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+- Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer listed
+  in this license in the documentation and/or other materials
+  provided with the distribution.
+
+- Neither the name of the copyright holders nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+The copyright holders provide no reassurances that the source code
+provided does not infringe any patent, copyright, or any other
+intellectual property rights of third parties.  The copyright holders
+disclaim any liability to any recipient for claims brought against
+recipient by any third party for infringement of that parties
+intellectual property rights.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</text>

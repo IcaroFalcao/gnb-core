@@ -1,0 +1,3 @@
+add_test( udp_pool_network_gateway_tester.when_config_valid_then_trx_succeeds /home/sdr/OCUDU/ocudu/build/tests/unittests/gateways/udp_network_gateway_pool_depletion_test [==[--gtest_filter=udp_pool_network_gateway_tester.when_config_valid_then_trx_succeeds]==] --gtest_also_run_disabled_tests)
+set_tests_properties( udp_pool_network_gateway_tester.when_config_valid_then_trx_succeeds PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/gateways SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==] LABELS tsan)
+set( udp_network_gateway_pool_depletion_test_TESTS udp_pool_network_gateway_tester.when_config_valid_then_trx_succeeds)

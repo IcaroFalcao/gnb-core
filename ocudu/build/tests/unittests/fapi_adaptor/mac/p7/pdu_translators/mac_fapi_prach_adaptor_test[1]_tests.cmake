@@ -1,0 +1,3 @@
+add_test( mac_fapi_ul_prach_pdu_conversor_test.valid_prach_pdu_should_pass /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi_adaptor/mac/p7/pdu_translators/mac_fapi_prach_adaptor_test [==[--gtest_filter=mac_fapi_ul_prach_pdu_conversor_test.valid_prach_pdu_should_pass]==] --gtest_also_run_disabled_tests)
+set_tests_properties( mac_fapi_ul_prach_pdu_conversor_test.valid_prach_pdu_should_pass PROPERTIES WORKING_DIRECTORY /home/sdr/OCUDU/ocudu/build/tests/unittests/fapi_adaptor/mac/p7/pdu_translators SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set( mac_fapi_prach_adaptor_test_TESTS mac_fapi_ul_prach_pdu_conversor_test.valid_prach_pdu_should_pass)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libocudu_fapi_decorators.a CMakeFiles/ocudu_fapi_decorators.dir/decorator_factory.cpp.o
+/usr/bin/ranlib libocudu_fapi_decorators.a
